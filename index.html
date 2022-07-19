@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/page/page.css">
+  <link rel="shortcut icon" href="./assets/img/icon.webp">
+  <title>Em busca de um sonho</title>
+</head>
+<body>
+  <div id="scrollPath"></div>
+  <div id="progressBar"></div>
+
+  <header>
+    <section class="container">
+      <p class="font2">ATENÇÃO: Este vídeo ficará no ar somente hoje para os moradores da região de <strong class="font1" id="address">São Paulo</strong></p>
+    </section>
+  </header>
+
+  <main>
+    <section class="container1">
+      <article class="container">
+        <div class="logo">
+          <img src="./assets/img/logo.webp" alt="logo">
+        </div>
+
+        <div id="video">
+          <div style="padding:56.25% 0 0 0;position:relative;"><iframe frameborder="0" allowfullscreen src="https://scripts.converteai.net/95c367d6-dca7-48ad-82cf-dd6ffea0ad61/players/62d42a9a6008c2000ba71507/embed.html" id="ifr_62d42a9a6008c2000ba71507" style="position:absolute;top:0;left:0;width:100%;height:100%;" referrerpolicy="origin"></iframe></div>
+        </div>
+      </article>
+    </section>
+
+    <section class="container2">
+      <article class="container">
+        <h1 class="title font1">
+          O QUE VOCÊ VAI APRENDER DENTRO DO CURSO:
+        </h1>
+
+        <div class="modulos">
+          <div class="modulo"><img src="./assets/img/modulo (1).webp" alt="modulo" loading="lazy"></div>
+          <div class="modulo"><img src="./assets/img/modulo (2).webp" alt="modulo" loading="lazy"></div>
+          <div class="modulo"><img src="./assets/img/modulo (3).webp" alt="modulo" loading="lazy"></div>
+          <div class="modulo"><img src="./assets/img/modulo (4).webp" alt="modulo" loading="lazy"></div>
+          <div class="modulo"><img src="./assets/img/modulo (5).webp" alt="modulo" loading="lazy"></div>
+          <div class="modulo"><img src="./assets/img/modulo (6).webp" alt="modulo" loading="lazy"></div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <section class="container">
+      <p class="font2">
+        Em Busca de um sonho - Copyright 2022 &#169;
+        <br><br>
+        <a href="./termosdeuso/">Termos de Uso</a> <a href="./politicasdeprivacidade/">Politicas de Privacidade</a>
+      </p>
+    </section>
+  </footer>
+
+  <script src="./assets/js/animatescroll.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+      $.get("https://ipinfo.io/json", function (response) {
+          $("#address").html(response.city);
+      }, "jsonp");
+  </script>
+</body>
+</html>
