@@ -33,6 +33,10 @@ main {
         margin: 1.5rem auto;
         display: grid;
 
+        @media screen and (max-width:540px){
+          margin-top: 6rem;
+        }
+
         img {
           width: 100%;
         }
@@ -55,12 +59,44 @@ main {
     .container {
       padding: 2rem 0;
 
+      @media screen and (max-width:540px){
+        padding-top: 7rem;
+      }
+
       .title {
         text-align: center;
         margin-bottom: 1.5rem;
         font-size: 1.75rem;
         text-align: center;
         color: #fff;
+      }
+
+      .videos {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 4.5rem;
+
+        @media screen and (max-width:540px){
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-gap: 20px;
+        }
+
+        .video {
+          width: 22%;
+
+          @media screen and (max-width:540px){
+            width: 100%;
+          }
+
+          video {
+            width: 100%;
+            border-radius: 1rem;
+            box-shadow: 0px 0px 15px #f0b300;
+          }
+        }
       }
 
       .modulos {
@@ -102,4 +138,18 @@ footer {
       }
     }
   }
+}
+
+.whats .float{
+  right:40px;position:fixed;height:60px;bottom:30px;z-index:100
+}
+
+@media screen and (max-width: 480px){
+  .whats .float{
+    right:20px;height:60px;bottom:30px
+  }
+}
+
+.whats .float img{
+  background-color:#000;padding:5px;border-radius:50%
 }
